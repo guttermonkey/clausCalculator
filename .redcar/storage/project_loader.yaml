@@ -1,0 +1,7 @@
+--- 
+open_files: 
+  - config.ru
+  - app.rb
+  - views/home.erb
+  - views/calc.erb
+  - views/layout.erb
