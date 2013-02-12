@@ -1,0 +1,56 @@
+%form{:action => "/calc", :method => "post", :class => "form-horizontal span6"}
+  %legend Enter patient's familial details:
+  .control-group
+    .controls
+      %label.checkbox
+        %input{:type => "checkbox", :name => "firstdeg1"} Mother, sister or daughter
+    %label.control-label{:for => "firstdeg1age"} Age of onset:
+    .controls
+      %select{:name => "firstdeg1age"}
+        %option{:value => "0"} 20-29
+        %option{:value => "1"} 30-39
+        %option{:value => "2"} 40-49
+        %option{:value => "3"} 50-59
+        %option{:value => "4"} 60-69
+        %option{:value => "5"} 70-79
+  .control-group
+    .controls
+      %label.checkbox
+        %input{:type => "checkbox", :name => "firstdeg2"} Another mother, sister or daughter
+    %label.control-label{:for => "firstdeg2age"} Age of onset:
+    .controls
+      %select{:name => "firstdeg2age"}
+        %option{:value => "0"} 20-29
+        %option{:value => "1"} 30-39
+        %option{:value => "2"} 40-49
+        %option{:value => "3"} 50-59
+        %option{:value => "4"} 60-69
+        %option{:value => "5"} 70-79
+  .control-group
+    .controls
+      %label.checkbox
+        %input{:type => "checkbox", :name => "secdeg1"} Grandmother, aunt or niece
+    %label.control-label{:for => "secdeg1age"} Age of onset:
+    .controls
+      %select{:name => "secdeg1age"}
+        %option{:value => "0"} 20-29
+        %option{:value => "1"} 30-39
+        %option{:value => "2"} 40-49
+        %option{:value => "3"} 50-59
+        %option{:value => "4"} 60-69
+        %option{:value => "5"} 70-79
+  .control-group
+    .controls
+      %label.checkbox
+        %input{:type => "checkbox", :name => "secdeg2"} Another grandmother, aunt or niece
+    %label.control-label{:for => "secdeg2age"} Age of onset:
+    .controls
+      %select{:name => "secdeg2age"}
+        %option{:value => "0"} 20-29
+        %option{:value => "1"} 30-39
+        %option{:value => "2"} 40-49
+        %option{:value => "3"} 50-59
+        %option{:value => "4"} 60-69
+        %option{:value => "5"} 70-79
+  .form-actions
+    %input{:type => "submit", :class => "btn btn-success", :value => "Calculate!"}

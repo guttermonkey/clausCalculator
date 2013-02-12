@@ -1,0 +1,17 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Radiology Ltd Claus Model Calculator
+    / Le HTML5 shim, for IE6-8 support of HTML elements
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    / Le styles
+    %link{:href => "/css/bootstrap.min.css", :rel => "stylesheet", :media => "screen"}/
+  %body
+    .container
+      .page-header
+        %h2
+          %img{:src => "/img/radltd.png"}
+          Radiology Ltd Claus Model Calculator
+      =yield
