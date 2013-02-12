@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'erb'
+require 'haml'
 
 class ClausConverter < Sinatra::Base
   configure do
@@ -15,7 +15,7 @@ class ClausConverter < Sinatra::Base
   end
   
   get '/' do
-    erb :home
+    haml :home
   end
   
   post '/calc' do
@@ -32,7 +32,7 @@ class ClausConverter < Sinatra::Base
       @result = settings.onesecondtbl[params[:secdeg1age].to_i]
     end
         
-    erb :calc
+    haml :calc
   end
   
 end
